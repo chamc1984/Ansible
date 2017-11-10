@@ -1,0 +1,6 @@
+- hosts: work
+  remote_user: chamcwork
+  tasks:
+    - name: ping
+      ping:
+

@@ -1,0 +1,6 @@
+---
+- name: download Oracle JDK8
+  get_url: url=http://download.oracle.com/otn/java/jdk/8u151-b12/jdk-8u151-linux-x64.rpm dest=/tmp/jdk-8u151-linux-x64.rpm headers="Cookie:' gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie'" validate_certs=no owner=root group=root mode=744
+- name: install JDK8
+  yum: name=/tmp/jdk-8u151-linux-x64.rpm state=present
+

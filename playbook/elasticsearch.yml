@@ -1,0 +1,8 @@
+#
+# es.yml
+#
+- hosts: master
+  remote_user: chamcxyz
+  become: true
+  roles:
+    - elasticsearch
